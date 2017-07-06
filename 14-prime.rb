@@ -2,6 +2,16 @@
 
 def is_prime(n)
 # ....
+x = 2
+while x <= n/2
+  if n % x == 0
+    puts "#{n}%#{x} = #{n % x}" 
+    return false
+  end
+  puts "#{n}%#{x} = #{n % x}"
+  x = x + 1
+end
+  return true
 end
 
 print "请输入数字 N，然后按 Enter: "

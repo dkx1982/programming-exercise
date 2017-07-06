@@ -2,8 +2,18 @@
 
 def filter_even(arr)
   #...
+  arr1 = []
+
+  arr.each do |a|
+    if a % 2 == 0
+      arr1 << a
+    end
+  end
+  return arr1
 end
 
 arr =  [7, 68, 42, 46, 9, 91, 77, 46, 86, 1]
+
+
 
 puts filter_even(arr).to_s # 应该是 [68, 42, 46, 46, 86]

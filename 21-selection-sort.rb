@@ -3,6 +3,7 @@
 
 def insertion_sort(arr)
   #...
+
 end
 
 arr =  [7, 68, 42, 46, 9, 91, 77, 46, 86, 1]

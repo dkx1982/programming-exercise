@@ -2,6 +2,21 @@
 
 def find_missing(arr)
   # ...
+  n = 0
+  while n < 10
+    m = 0
+    arr.each do |a|
+      if a == n
+        m = 1
+        puts "--#{m}---"
+        break
+      end
+    end
+    if m == 0
+      puts n
+    end
+    n = n + 1
+  end
 end
 
 answer = find_missing( [2,2,1,5,8,4] )

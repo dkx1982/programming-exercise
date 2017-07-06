@@ -13,8 +13,21 @@ while (true)
 end
 
 puts arr.to_s
-
-puts "总和是 _____"
-puts "平均是 _____"
-puts "最大值是 _____"
-puts "最小值是 _____"
+sum = 0
+p = 0
+max = arr.first
+mix = arr.first
+arr.each do |a|
+  sum = sum + a
+  if max < a
+    max = a
+  elsif mix > a
+    mix = a
+  end
+  p = p + 1
+end
+p = sum.to_f/p
+puts "总和是 #{sum}"
+puts "平均是 #{p}"
+puts "最大值是 #{max}"
+puts "最小值是 #{mix}"
